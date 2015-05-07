@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CDC6D4F1AF44D8C002FA4AF /* Bishop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC6D491AF44D8C002FA4AF /* Bishop.jpg */; };
+		7CDC6D501AF44D8C002FA4AF /* King.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC6D4A1AF44D8C002FA4AF /* King.jpg */; };
+		7CDC6D511AF44D8C002FA4AF /* Knight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC6D4B1AF44D8C002FA4AF /* Knight.jpg */; };
+		7CDC6D521AF44D8C002FA4AF /* Pawn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC6D4C1AF44D8C002FA4AF /* Pawn.jpg */; };
+		7CDC6D531AF44D8C002FA4AF /* Queen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC6D4D1AF44D8C002FA4AF /* Queen.jpg */; };
+		7CDC6D541AF44D8C002FA4AF /* Rook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC6D4E1AF44D8C002FA4AF /* Rook.jpg */; };
+		7CF5A3E01AF3A34400F394B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF5A3DF1AF3A34400F394B9 /* main.m */; };
+		7CF5A3E31AF3A34400F394B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF5A3E21AF3A34400F394B9 /* AppDelegate.m */; };
+		7CF5A3E61AF3A34400F394B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF5A3E51AF3A34400F394B9 /* ViewController.m */; };
+		7CF5A3E91AF3A34400F394B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF5A3E71AF3A34400F394B9 /* Main.storyboard */; };
+		7CF5A3EB1AF3A34400F394B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF5A3EA1AF3A34400F394B9 /* Images.xcassets */; };
+		7CF5A3EE1AF3A34400F394B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF5A3EC1AF3A34400F394B9 /* LaunchScreen.xib */; };
+		7CF5A3FA1AF3A34400F394B9 /* NewChessProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF5A3F91AF3A34400F394B9 /* NewChessProjectTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CF5A3F41AF3A34400F394B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CF5A3D21AF3A34400F394B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CF5A3D91AF3A34400F394B9;
+			remoteInfo = NewChessProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CDC6D491AF44D8C002FA4AF /* Bishop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Bishop.jpg; path = ../figuries/Bishop.jpg; sourceTree = "<group>"; };
+		7CDC6D4A1AF44D8C002FA4AF /* King.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = King.jpg; path = ../figuries/King.jpg; sourceTree = "<group>"; };
+		7CDC6D4B1AF44D8C002FA4AF /* Knight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Knight.jpg; path = ../figuries/Knight.jpg; sourceTree = "<group>"; };
+		7CDC6D4C1AF44D8C002FA4AF /* Pawn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Pawn.jpg; path = ../figuries/Pawn.jpg; sourceTree = "<group>"; };
+		7CDC6D4D1AF44D8C002FA4AF /* Queen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Queen.jpg; path = ../figuries/Queen.jpg; sourceTree = "<group>"; };
+		7CDC6D4E1AF44D8C002FA4AF /* Rook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Rook.jpg; path = ../figuries/Rook.jpg; sourceTree = "<group>"; };
+		7CF5A3DA1AF3A34400F394B9 /* NewChessProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewChessProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF5A3DE1AF3A34400F394B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF5A3DF1AF3A34400F394B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CF5A3E11AF3A34400F394B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7CF5A3E21AF3A34400F394B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CF5A3E41AF3A34400F394B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7CF5A3E51AF3A34400F394B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7CF5A3E81AF3A34400F394B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CF5A3EA1AF3A34400F394B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7CF5A3ED1AF3A34400F394B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7CF5A3F31AF3A34400F394B9 /* NewChessProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewChessProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF5A3F81AF3A34400F394B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF5A3F91AF3A34400F394B9 /* NewChessProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewChessProjectTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CF5A3D71AF3A34400F394B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF5A3F01AF3A34400F394B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CDC6D581AF7B561002FA4AF /* figuries */ = {
+			isa = PBXGroup;
+			children = (
+				7CDC6D491AF44D8C002FA4AF /* Bishop.jpg */,
+				7CDC6D4A1AF44D8C002FA4AF /* King.jpg */,
+				7CDC6D4B1AF44D8C002FA4AF /* Knight.jpg */,
+				7CDC6D4C1AF44D8C002FA4AF /* Pawn.jpg */,
+				7CDC6D4D1AF44D8C002FA4AF /* Queen.jpg */,
+				7CDC6D4E1AF44D8C002FA4AF /* Rook.jpg */,
+			);
+			name = figuries;
+			sourceTree = "<group>";
+		};
+		7CF5A3D11AF3A34400F394B9 = {
+			isa = PBXGroup;
+			children = (
+				7CF5A3DC1AF3A34400F394B9 /* NewChessProject */,
+				7CF5A3F61AF3A34400F394B9 /* NewChessProjectTests */,
+				7CF5A3DB1AF3A34400F394B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CF5A3DB1AF3A34400F394B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CF5A3DA1AF3A34400F394B9 /* NewChessProject.app */,
+				7CF5A3F31AF3A34400F394B9 /* NewChessProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CF5A3DC1AF3A34400F394B9 /* NewChessProject */ = {
+			isa = PBXGroup;
+			children = (
+				7CF5A3E11AF3A34400F394B9 /* AppDelegate.h */,
+				7CF5A3E21AF3A34400F394B9 /* AppDelegate.m */,
+				7CF5A3E41AF3A34400F394B9 /* ViewController.h */,
+				7CF5A3E51AF3A34400F394B9 /* ViewController.m */,
+				7CF5A3E71AF3A34400F394B9 /* Main.storyboard */,
+				7CF5A3EA1AF3A34400F394B9 /* Images.xcassets */,
+				7CF5A3EC1AF3A34400F394B9 /* LaunchScreen.xib */,
+				7CF5A3DD1AF3A34400F394B9 /* Supporting Files */,
+			);
+			path = NewChessProject;
+			sourceTree = "<group>";
+		};
+		7CF5A3DD1AF3A34400F394B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CDC6D581AF7B561002FA4AF /* figuries */,
+				7CF5A3DE1AF3A34400F394B9 /* Info.plist */,
+				7CF5A3DF1AF3A34400F394B9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CF5A3F61AF3A34400F394B9 /* NewChessProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CF5A3F91AF3A34400F394B9 /* NewChessProjectTests.m */,
+				7CF5A3F71AF3A34400F394B9 /* Supporting Files */,
+			);
+			path = NewChessProjectTests;
+			sourceTree = "<group>";
+		};
+		7CF5A3F71AF3A34400F394B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CF5A3F81AF3A34400F394B9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CF5A3D91AF3A34400F394B9 /* NewChessProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF5A3FD1AF3A34400F394B9 /* Build configuration list for PBXNativeTarget "NewChessProject" */;
+			buildPhases = (
+				7CF5A3D61AF3A34400F394B9 /* Sources */,
+				7CF5A3D71AF3A34400F394B9 /* Frameworks */,
+				7CF5A3D81AF3A34400F394B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewChessProject;
+			productName = NewChessProject;
+			productReference = 7CF5A3DA1AF3A34400F394B9 /* NewChessProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CF5A3F21AF3A34400F394B9 /* NewChessProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF5A4001AF3A34400F394B9 /* Build configuration list for PBXNativeTarget "NewChessProjectTests" */;
+			buildPhases = (
+				7CF5A3EF1AF3A34400F394B9 /* Sources */,
+				7CF5A3F01AF3A34400F394B9 /* Frameworks */,
+				7CF5A3F11AF3A34400F394B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CF5A3F51AF3A34400F394B9 /* PBXTargetDependency */,
+			);
+			name = NewChessProjectTests;
+			productName = NewChessProjectTests;
+			productReference = 7CF5A3F31AF3A34400F394B9 /* NewChessProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CF5A3D21AF3A34400F394B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Sergey Yasnetsky";
+				TargetAttributes = {
+					7CF5A3D91AF3A34400F394B9 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					7CF5A3F21AF3A34400F394B9 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 7CF5A3D91AF3A34400F394B9;
+					};
+				};
+			};
+			buildConfigurationList = 7CF5A3D51AF3A34400F394B9 /* Build configuration list for PBXProject "NewChessProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CF5A3D11AF3A34400F394B9;
+			productRefGroup = 7CF5A3DB1AF3A34400F394B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CF5A3D91AF3A34400F394B9 /* NewChessProject */,
+				7CF5A3F21AF3A34400F394B9 /* NewChessProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CF5A3D81AF3A34400F394B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CDC6D521AF44D8C002FA4AF /* Pawn.jpg in Resources */,
+				7CF5A3E91AF3A34400F394B9 /* Main.storyboard in Resources */,
+				7CDC6D541AF44D8C002FA4AF /* Rook.jpg in Resources */,
+				7CF5A3EE1AF3A34400F394B9 /* LaunchScreen.xib in Resources */,
+				7CDC6D501AF44D8C002FA4AF /* King.jpg in Resources */,
+				7CDC6D4F1AF44D8C002FA4AF /* Bishop.jpg in Resources */,
+				7CDC6D511AF44D8C002FA4AF /* Knight.jpg in Resources */,
+				7CDC6D531AF44D8C002FA4AF /* Queen.jpg in Resources */,
+				7CF5A3EB1AF3A34400F394B9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF5A3F11AF3A34400F394B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CF5A3D61AF3A34400F394B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF5A3E61AF3A34400F394B9 /* ViewController.m in Sources */,
+				7CF5A3E31AF3A34400F394B9 /* AppDelegate.m in Sources */,
+				7CF5A3E01AF3A34400F394B9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF5A3EF1AF3A34400F394B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF5A3FA1AF3A34400F394B9 /* NewChessProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CF5A3F51AF3A34400F394B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CF5A3D91AF3A34400F394B9 /* NewChessProject */;
+			targetProxy = 7CF5A3F41AF3A34400F394B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CF5A3E71AF3A34400F394B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CF5A3E81AF3A34400F394B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CF5A3EC1AF3A34400F394B9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CF5A3ED1AF3A34400F394B9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CF5A3FB1AF3A34400F394B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CF5A3FC1AF3A34400F394B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CF5A3FE1AF3A34400F394B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NewChessProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CF5A3FF1AF3A34400F394B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NewChessProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7CF5A4011AF3A34400F394B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NewChessProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewChessProject.app/NewChessProject";
+			};
+			name = Debug;
+		};
+		7CF5A4021AF3A34400F394B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NewChessProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewChessProject.app/NewChessProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CF5A3D51AF3A34400F394B9 /* Build configuration list for PBXProject "NewChessProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF5A3FB1AF3A34400F394B9 /* Debug */,
+				7CF5A3FC1AF3A34400F394B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF5A3FD1AF3A34400F394B9 /* Build configuration list for PBXNativeTarget "NewChessProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF5A3FE1AF3A34400F394B9 /* Debug */,
+				7CF5A3FF1AF3A34400F394B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF5A4001AF3A34400F394B9 /* Build configuration list for PBXNativeTarget "NewChessProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF5A4011AF3A34400F394B9 /* Debug */,
+				7CF5A4021AF3A34400F394B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CF5A3D21AF3A34400F394B9 /* Project object */;
+}
