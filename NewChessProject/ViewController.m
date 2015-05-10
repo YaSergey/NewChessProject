@@ -11,82 +11,144 @@
 @interface ViewController ()
 
 @property (nonatomic, weak) UIView *someView;
-@property (nonatomic, weak) UIImageView *whiteView;
+@property (nonatomic, weak) UIImageView *boardWhiteView;
 
 @property (nonatomic, weak) UIImageView *blackView;
 @property (nonatomic, weak) UIView *imageView;
+@property (nonatomic, assign) NSInteger widthSquare1;
+@property (nonatomic, assign) NSInteger boardX;
+@property (nonatomic, assign) NSInteger boardY;
+
+@property (nonatomic, assign) NSInteger boardWidht;
+@property (nonatomic, assign) NSInteger boardHeight;
+
 
 @property (nonatomic, assign) CGPoint differencePoint;
 @property (readonly, copy) NSString *bundlePath;
 @property (nonatomic, strong) NSMutableArray * nameFiguriesArray;
+@property (nonatomic, strong) NSMutableArray * imagesArrayBlackPawn;
+
+//@property (nonatomic, strong) NSInteger * widthSquare1;
+
 
 @end
+
+
+const NSInteger maxNumberLine = 8;
 
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     
-    [self addFiguriesToBoard];
-
-    const NSInteger maxNumberLine = 8;
+    [super viewDidLoad];
     
+
+    [self makeChessBoard];
+
+    [self addFiguriesToBoard];
+    
+
+    
+/*    NSInteger heightSquare = (self.view.bounds.size.width/ maxNumberLine);
+
+    NSLog(@"self.view.bounds.size.height %@", self.view.bounds.size.height);
+    CGPoint pointBlack; pointBlack.x = x; pointBlack.y = y;
+    CGSize size; size.width = widthSquare; size.height = widthSquare;
+    
+    UIImageView * boardWhiteView = [[UIImageView alloc] initWithFrame:CGRectMake(x, y, widthSquare*7, widthSquare*7)];
+    boardWhiteView.backgroundColor = [[UIColor lightGrayColor]colorWithAlphaComponent:0.6];
+    self.imageView = boardWhiteView;
+    [self.view addSubview:boardWhiteView];
+    
+ NSInteger widthSquare1 = (boardWhiteView.bounds.size.height/maxNumberLine);
+
+    CGPoint pointWhite; pointWhite.x = x + size.width; pointWhite.y = y + size.height;
+        CGSize size; sizeWhite.width = 150; sizeWhite.height = 150;
+
+     UIImageView * boardBlackView = [[UIImageView alloc] initWithFrame:CGRectMake(pointWhite.x, pointWhite.y, size.width, size.height)];
+         boardBlackView.backgroundColor = [UIColor blackColor];
+ */
+    
+}
+
+- (void) makeChessBoard { // метод отрисовки шахматной доски
+
     NSInteger numberOfLine = 0;
     NSInteger x = 0;
     NSInteger y = 0;
     NSInteger widthSquare = (self.view.bounds.size.height/maxNumberLine);
- 
-//    NSInteger heightSquare = (self.view.bounds.size.width/ maxNumberLine);
+    NSInteger lineNumber;
+    NSInteger numberSignPoint = 0;
+    NSInteger letterSign = 0;
+    
+// опеределение координат и шахматной доски
+   
+    self.boardX = self.view.frame.size.width/2 - self.view.bounds.size.width/2;
+    self.boardY = self.view.frame.size.height/2 - self.view.bounds.size.height/2;
+   
+// опеределение размера и переменных шахматной доски
 
-//    NSLog(@"self.view.bounds.size.height %@", self.view.bounds.size.height);
-//    CGPoint pointBlack; pointBlack.x = x; pointBlack.y = y;
-//    CGSize size; size.width = widthSquare; size.height = widthSquare;
+    self.boardWidht = self.view.bounds.size.width - self.boardX*10;
+    self.boardHeight = self.view.bounds.size.height - self.boardY*10;
     
-//    UIImageView * boardWhiteView = [[UIImageView alloc] initWithFrame:CGRectMake(x, y, widthSquare*7, widthSquare*7)];
-//    boardWhiteView.backgroundColor = [[UIColor lightGrayColor]colorWithAlphaComponent:0.6];
-//    self.imageView = boardWhiteView;
-//    [self.view addSubview:boardWhiteView];
+    UIImageView * boardContur = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 700, 700)];
+    boardContur.backgroundColor = [UIColor darkGrayColor];
+    self.imageView = boardContur;
+    [self.view addSubview: boardContur];
     
-//    NSInteger widthSquare1 = (boardWhiteView.bounds.size.height/maxNumberLine);
-
-//    CGPoint pointWhite; pointWhite.x = x + size.width; pointWhite.y = y + size.height;
-//        CGSize size; sizeWhite.width = 150; sizeWhite.height = 150;
-//
-    // UIImageView * boardBlackView = [[UIImageView alloc] initWithFrame:CGRectMake(pointWhite.x, pointWhite.y, size.width, size.height)];
-    //     boardBlackView.backgroundColor = [UIColor blackColor];
-  
     
-    for (NSInteger i =0; i<maxNumberLine; i++) {
-        for (NSInteger j= 0 ; j<maxNumberLine; j=j+2) {
-            
-            if (numberOfLine % 2) {
-                x = widthSquare * j + widthSquare;
-                y = widthSquare * numberOfLine;
-            } else {
-                x = widthSquare * j;
-                y = widthSquare * numberOfLine;
-            }
-            UIImageView * boardBlackView = [[UIImageView alloc] initWithFrame:CGRectMake(x, y, widthSquare, widthSquare)];
-            boardBlackView.backgroundColor = [UIColor blackColor];
-            self.imageView =  boardBlackView;
-            [self.view addSubview: boardBlackView];
-            
-            if (numberOfLine == 2) {
+UIImageView * boardWhiteView = [[UIImageView alloc] initWithFrame:CGRectMake(boardContur.frame.size.width/2 - boardContur.frame.size.width/2.25, boardContur.frame.size.height/2 - boardContur.frame.size.height/2.25, boardContur.frame.size.width*0.9, boardContur.frame.size.height*0.9)];
+    
+        boardWhiteView.backgroundColor = [[UIColor lightGrayColor]colorWithAlphaComponent:0.6];
+        
+        self.imageView = boardWhiteView;
+        [boardContur addSubview:boardWhiteView];
+        
+        self.widthSquare1 = (boardWhiteView.bounds.size.height/maxNumberLine);
+        
+// цикл создания черных клеток доски
+        
+        for (NSInteger i =0; i<maxNumberLine; i++) {
+            for (NSInteger j= 0 ; j<maxNumberLine; j=j+2) {
                 
-                [self addFiguriesToBoard];
+                if (numberOfLine % 2) {
+                    y = self.widthSquare1 * j + self.widthSquare1;
+                    x = self.widthSquare1 * numberOfLine;
+                } else {
+                    y = self.widthSquare1 * j;
+                    x = self.widthSquare1 * numberOfLine;
+                }
+                UIImageView * boardBlackView = [[UIImageView alloc] initWithFrame:CGRectMake(x+3, y+3, self.widthSquare1, self.widthSquare1)];
+                boardBlackView.backgroundColor = [UIColor blackColor];
+                self.imageView =  boardBlackView;
+                
+                [boardWhiteView addSubview: boardBlackView];
+            
             }
 
-        }
-        numberOfLine ++;
+            numberOfLine ++;
+
+            NSLog(@"numberOfLine %ld" , (long)numberOfLine);
+
+//нумерация шахматных линий от 1 до 8
+            
+            UILabel * textLineNumber = [[UILabel alloc] initWithFrame:CGRectMake(15, 70+numberSignPoint, 20, 20)];
+            textLineNumber.text = [NSString stringWithFormat:@"%li", (long)numberOfLine];
+            textLineNumber.textColor = [UIColor redColor];
+            [boardContur addSubview:textLineNumber];
+            
+            numberSignPoint = numberSignPoint + self.widthSquare1;
+ 
+//буквенные обозначения шахматных линий от A до F
+            UILabel * textLetterSign = [[UILabel alloc] initWithFrame:CGRectMake(70+letterSign, 15, 20, 20)];
+            textLetterSign.text = [NSString stringWithFormat: @"%li", (long)numberOfLine];
+            textLetterSign.textColor = [UIColor redColor];
+            [boardContur addSubview:textLetterSign];
+            letterSign =letterSign + self.widthSquare1;
     }
 
-//UIImageView * whiteView = [[UIImageView alloc] initWithFrame:CGRectMake(10,200,100,100)];
-//    whiteView.backgroundColor = [UIColor lightGrayColor];
-//    self.whiteView.multipleTouchEnabled = YES;
-//    self.imageView = whiteView;
-//    [self.view addSubview:whiteView];
-//    [self.view addSubview:boardView];
-
+    
     
 // одинарный клик
     UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
@@ -136,15 +198,41 @@
     
 }
 
+- (void) figuriesNamesArray {
+   
+    NSMutableArray * imagesArrayBlackPawn = [[NSMutableArray alloc] init];
+    
+    NSMutableArray * figuriesNamesArr = [[NSMutableArray alloc]init];
+
+    NSString * stringFiguriesName = @"Bishop,King,Knight,Pawn,Queen,Rook";
+
+    NSString * stringFiguriesPlace = @"100,120,300,400,600";
+
+    for (int i = 0, m = 0; i < imagesArrayBlackPawn.count; i++) {
+        
+//        int j = KONST_j;
+//        int k = KONST_i;
+        
+//        UIView * figureView = [[UIView alloc] initWithFrame:CGRectMake(k+m, k+j , j, j)];
+//        UIImageView * imageView = [[UIImageView alloc]initWithFrame:figureView.bounds];
+//        m = m+j;
+//        
+//        imageView.image = [imagesArrayBlackPawn objectAtIndex:i];
+//        [figureView addSubview:imageView];
+//        [self.view addSubview:figureView];
+    }
+    
+    
+}
+
+
 - (void) handleTap:  (UITapGestureRecognizer *) tapGesture {
     NSLog(@"handleTap");
 }
 
-
 - (void) handleDoubleTap:  (UITapGestureRecognizer *) tapGesture {
     NSLog(@"handleDoubleTap");
 }
-
 
 - (void) longPress: (UILongPressGestureRecognizer *) longPress {
     NSLog(@"longPress");
@@ -222,6 +310,9 @@
 
 #pragma mark - figuries
 
+// добавление фигур на доску.
+
+
 - (void) addFiguriesToBoard {
     
     NSMutableArray * figuriesArray = [NSMutableArray array];
@@ -229,6 +320,9 @@
     NSFileManager * manager = [NSFileManager new];
     NSBundle * bungle = [NSBundle mainBundle];
     NSDirectoryEnumerator * enumerator = [manager enumeratorAtPath:[bungle bundlePath]];
+
+//    NSInteger * figuriesSize = [self  widthSquare1];
+//    NSInteger figuriesSize = (self.boardWhiteView.bounds.size.height/maxNumberLine);
     
     NSLog(@"enumerator %@", enumerator);
     
@@ -240,7 +334,7 @@
         }
     }
     
-    NSLog(@"nameFiguriesArray %@", nameFiguriesArray);
+//    NSLog(@"nameFiguriesArray %@", nameFiguriesArray);
     
     
     for (NSString * imageFiguriesNames in nameFiguriesArray) {
@@ -249,12 +343,12 @@
         [figuriesArray addObject:image];
         
     }
-    
-    NSLog(@"imagesArray %@", figuriesArray);
+
+//    NSLog(@"imagesArray %@", figuriesArray);
     
     for (int i = 0; i < figuriesArray.count; i++) {
         
-        UIView * figureView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 80, 80)];
+        UIView * figureView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, self.widthSquare1*0.7, self.widthSquare1*0.7)];
         UIImageView * imageView = [[UIImageView alloc] initWithFrame:figureView.bounds];
           
         imageView.image = [figuriesArray objectAtIndex:i];

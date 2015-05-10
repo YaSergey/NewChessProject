@@ -13,6 +13,7 @@
 		7CDC6D521AF44D8C002FA4AF /* Pawn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC6D4C1AF44D8C002FA4AF /* Pawn.jpg */; };
 		7CDC6D531AF44D8C002FA4AF /* Queen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC6D4D1AF44D8C002FA4AF /* Queen.jpg */; };
 		7CDC6D541AF44D8C002FA4AF /* Rook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC6D4E1AF44D8C002FA4AF /* Rook.jpg */; };
+		7CDC6DA21AFFDFEB002FA4AF /* MakeChessBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC6DA11AFFDFEB002FA4AF /* MakeChessBoard.m */; };
 		7CF5A3E01AF3A34400F394B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF5A3DF1AF3A34400F394B9 /* main.m */; };
 		7CF5A3E31AF3A34400F394B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF5A3E21AF3A34400F394B9 /* AppDelegate.m */; };
 		7CF5A3E61AF3A34400F394B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF5A3E51AF3A34400F394B9 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 		7CDC6D4C1AF44D8C002FA4AF /* Pawn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Pawn.jpg; path = ../figuries/Pawn.jpg; sourceTree = "<group>"; };
 		7CDC6D4D1AF44D8C002FA4AF /* Queen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Queen.jpg; path = ../figuries/Queen.jpg; sourceTree = "<group>"; };
 		7CDC6D4E1AF44D8C002FA4AF /* Rook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Rook.jpg; path = ../figuries/Rook.jpg; sourceTree = "<group>"; };
+		7CDC6DA01AFFDFEB002FA4AF /* MakeChessBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeChessBoard.h; sourceTree = "<group>"; };
+		7CDC6DA11AFFDFEB002FA4AF /* MakeChessBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeChessBoard.m; sourceTree = "<group>"; };
 		7CF5A3DA1AF3A34400F394B9 /* NewChessProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewChessProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF5A3DE1AF3A34400F394B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CF5A3DF1AF3A34400F394B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 		7CF5A3D11AF3A34400F394B9 = {
 			isa = PBXGroup;
 			children = (
+				7CDC6DA01AFFDFEB002FA4AF /* MakeChessBoard.h */,
+				7CDC6DA11AFFDFEB002FA4AF /* MakeChessBoard.m */,
 				7CF5A3DC1AF3A34400F394B9 /* NewChessProject */,
 				7CF5A3F61AF3A34400F394B9 /* NewChessProjectTests */,
 				7CF5A3DB1AF3A34400F394B9 /* Products */,
@@ -254,6 +259,7 @@
 				7CF5A3E61AF3A34400F394B9 /* ViewController.m in Sources */,
 				7CF5A3E31AF3A34400F394B9 /* AppDelegate.m in Sources */,
 				7CF5A3E01AF3A34400F394B9 /* main.m in Sources */,
+				7CDC6DA21AFFDFEB002FA4AF /* MakeChessBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
